@@ -5,7 +5,6 @@ if(condicion logica){
     codigo a ejecutar si no se cumple la condicion
 }
 */
-
 let numero1 = parseInt(prompt("ingrese un primero numero"));
 let numero2 = parseInt(prompt("ingrese un segundo numero"));
 
