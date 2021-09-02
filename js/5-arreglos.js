@@ -23,22 +23,36 @@ series.push(serieUsuario);
 console.log(series.length); 
 
 //mostrar todos los elementos de un arreglo 
-for(let posicion = 0; posicion < series.length; posicion++){
-    document.write('<br>Serie: '+series[posicion]);
-}
+mostrarSeries();
 
 // modificar un elemento del arreglo
 series[4] = 'The office';
-
-document.write('<br>');
-for(let posicion = 0; posicion < series.length; posicion++){
-    document.write('<br>Serie: '+series[posicion]);
-}
+mostrarSeries();
 
 // agregar elemento nuevo en una posicion particular
 series.splice(0,0,'one piece');
+mostrarSeries();
 
-document.write('<br>');
-for(let posicion = 0; posicion < series.length; posicion++){
-    document.write('<br>Serie: '+series[posicion]);
+// agregar otro elemento
+series.splice(3,0,'Sword art online');
+
+// splice(posicion, elementos a borrar a partir de la posicion anterior, elemento a agregar en el arreglo)
+mostrarSeries();
+
+// eliminar elementos de un arreglo
+series.splice(7,1);
+// splice(posicion, elementos a borrar)
+mostrarSeries();
+
+// eliminar todos los elementos a partir de tal posicion
+series.splice(3); //borro desde la posicion 3 en adelante
+series.splice(0,1);
+mostrarSeries();
+
+// crear funcion que muestre los elementos del arreglo
+function mostrarSeries(){
+    document.write('<br>');
+    for(let posicion = 0; posicion < series.length; posicion++){
+        document.write('<br>Serie: '+series[posicion]);
+    }
 }
