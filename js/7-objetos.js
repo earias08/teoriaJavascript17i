@@ -22,8 +22,12 @@ let serie = {
     genero: 'sitcom',
     nombre : 'the office',
     temporadas: 9,
-    capitulos: 27
+    capitulos: 27,
+    ver: ()=>{console.log('viendo serie')},
+    // detener: ()=>{...}
 }
+
+serie.ver();
 
 // mostrar una propiedad de un objeto
 document.write(`Serie: ${serie.nombre}`);

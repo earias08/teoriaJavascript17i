@@ -15,8 +15,7 @@ class Serie {
     }
 
     mostrarDatosExtendido(){
-        // mostrar todas las propiedades del objeto '' o ``
-        
+        // mostrar todas las propiedades del objeto '' o `` 
     }
 
 }
